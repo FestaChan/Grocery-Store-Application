@@ -9,5 +9,5 @@
 ![image](https://user-images.githubusercontent.com/83434982/117753274-3386d180-b1e6-11eb-8d5f-0f1e4ca6e464.png)
 
 # Sources
-Inspired from:<br\>
+Inspired from:<br/>
 https://github.com/codebasics/python_projects_grocery_webapp
