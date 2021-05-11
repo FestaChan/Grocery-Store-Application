@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Products</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='order_style36.css') }}">
+</head>
+
+<body>
+    <h1>Grocery Store</h1>
+    <div class="topnav">
+        <a class="active" href="http://127.0.0.1:5000/">Products</a>
+        <a href="http://127.0.0.1:5000/order">Order</a>
+        <a href="http://127.0.0.1:5000/manage">Manage</a>
+    </div>
+
+    <br/><h2>Make Order</h2>
+
+    <div class='AddName'>
+        <form method='POST'>
+            <div>
+                <label>Enter Name: </label>
+                <input type="text" name="name">
+            </div>
+            <input type="submit">
+        </form>
+    </div>
+
+    <br/>
+    <div class='TableOrder'>
+        <form method='POST'>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>Boneless Chicken</td>
+                        <td>12.94</td>
+                        <td>2.0</td>
+                        <td>25.88</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Pork Loin</td>
+                        <td>9.85</td>
+                        <td>3.0</td>
+                        <td>29.55</td>
+                    </tr>
+                
+                    <tr>
+                        <td>White Bread</td>
+                        <td>3.66</td>
+                        <td>1.0</td>
+                        <td>3.66</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Sirloin Steak</td>
+                        <td>24.18</td>
+                        <td>2.0</td>
+                        <td>48.36</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Boneless Chicken</td>
+                        <td>12.94</td>
+                        <td>1.0</td>
+                        <td>12.94</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Spinach</td>
+                        <td>4.56</td>
+                        <td>2.0</td>
+                        <td>9.12</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <div class='AddProduct'>
+        <h2 class="underline">Welcome Festa!</h2>
+        <form method='POST'>
+            <h3>Add Product</h3>
+            <div>
+                <label>Product: </label>
+                <select name='product'>
+                    
+                    <option value=13>Spinach</option>
+                                   
+                    <option value=20>Eggs</option>
+                                   
+                    <option value=1>White Bread</option>
+                                   
+                    <option value=2>Boneless Chicken</option>
+                                   
+                    <option value=3>Pork Loin</option>
+                                   
+                    <option value=4>Sirloin Steak</option>
+                                   
+                    <option value=5>Atlantic Salmon</option>
+                                   
+                    <option value=6>White Rice</option>
+                                   
+                    <option value=7>Spaghetti</option>
+                                   
+                    <option value=11>Tomato</option>
+                                   
+                    <option value=12>Broccoli</option>
+                                   
+                    <option value=9>Milk</option>
+                                   
+                    <option value=10>Water Bottle</option>
+               
+                </select>
+               
+            </div>
+            <div>
+                <label>Quantity: </label>
+                <input type="text" name="quantity">
+            </div>
+            <input type = "submit">
+        </form>
+    </div>
+</body>
+</html>
+          

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Products</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='manage_style3.css') }}">
+</head>
+
+<body>
+    <h1>Grocery Store</h1>
+    <div class="topnav">
+        <a class="active" href="http://127.0.0.1:5000/">Products</a>
+        <a href="http://127.0.0.1:5000/order">Order</a>
+        <a href="http://127.0.0.1:5000/manage">Manage</a>
+    </div>
+
+    <br/><h2>View Orders</h2>
+
+    <br/>
+    <div class='TableOrder'>
+        <form method='POST'>
+            <table>
+                <thead>
+                    <tr>
+                        <th>OrderID</th>
+                        <th>Customer Name</th>
+                        <th>Total Price</th>
+                        <th>DateTime</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Festa</td>
+                        <td>129.51</td>
+                        <td>2021-05-06 00:00:00</td>
+                    </tr>
+                
+                    <tr>
+                        <td>2</td>
+                        <td>John</td>
+                        <td>24.18</td>
+                        <td>2021-05-09 00:00:00</td>
+                    </tr>
+                
+                    <tr>
+                        <td>20</td>
+                        <td>Claire</td>
+                        <td>0.0</td>
+                        <td>2021-05-10 16:19:59</td>
+                    </tr>
+                
+                    <tr>
+                        <td>22</td>
+                        <td>Vivian</td>
+                        <td>0.0</td>
+                        <td>2021-05-10 17:29:19</td>
+                    </tr>
+                
+                    <tr>
+                        <td>23</td>
+                        <td>favicon.ico</td>
+                        <td>0.0</td>
+                        <td>2021-05-10 17:29:55</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+    

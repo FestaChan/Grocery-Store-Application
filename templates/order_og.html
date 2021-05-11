@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Products</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='order_style36.css') }}">
+</head>
+
+<body>
+    <h1>Grocery Store</h1>
+    <div class="topnav">
+        <a class="active" href="http://127.0.0.1:5000/">Products</a>
+        <a href="http://127.0.0.1:5000/order">Order</a>
+        <a href="http://127.0.0.1:5000/manage">Manage</a>
+    </div>
+
+    <br/><h2>Make Order</h2>
+
+    <div class='AddName'>
+        <form method='POST'>
+            <div>
+                <label>Enter Name: </label>
+                <input type="text" name="name">
+            </div>
+            <input type="submit">
+        </form>
+    </div>
+
+    <br/>
+    <div class='TableOrder'>
+        <form method='POST'>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
